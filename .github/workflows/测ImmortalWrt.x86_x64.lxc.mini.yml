@@ -44,7 +44,7 @@ env:
   KERNEL_PATCHVER: 无内核，纯LXC ROOTFS
 
 jobs:
-  OpenWrt_Gateway_Builder:
+  ImmortalWrt_mini_Builder:
     runs-on: ubuntu-22.04
 
     steps:
@@ -129,12 +129,11 @@ jobs:
 
       - name: Install feeds
         run: cd openwrt && ./scripts/feeds install -a
-
-      - name: Generate default configuration
-        run: cd openwrt && make defconfig
       
       - name: Load custom configuration
         run: |
+          [ -e files ] && mv files openwrt/files
+          [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
           chmod +x $DIY_P2_SH
           cd openwrt
           $GITHUB_WORKSPACE/$DIY_P2_SH
@@ -154,6 +153,14 @@ jobs:
           make download -j8
           find dl -size -1024c -exec ls -l {} \;
           find dl -size -1024c -exec rm -f {} \;
+          
+      - name: Telegram notification start
+        run: |
+         curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=
+
+           🎉开始编译：${{ env.PRODUCT_NAME }}！
+
+          " >/dev/null 2>&1 && echo "ok..."
 
       - name: Compile the firmware
         id: compile
@@ -193,6 +200,7 @@ jobs:
           rm -rf immortalwrt-x86-64-generic-kernel.bin
           rm -rf immortalwrt-x86-64-generic.manifest
           rm -rf immortalwrt-x86-64-generic-squashfs-rootfs.img.gz
+          rm -rf immortalwrt-x86-64-generic-squashfs-combined-efi.img.gz
           mv immortalwrt-x86-64-generic-rootfs.tar.gz ImmortalWRT-${{ env.VERSION }}-x86-64-mini-rootfs-${{ env.FILE_DATE2 }}.tar.gz
           
           echo "FIRMWARE=$PWD" >> $GITHUB_ENV
@@ -231,7 +239,7 @@ jobs:
           commit: main
           token: ${{ secrets.TOKEN3  }}
           body: |
-            **This is Firmware : ImmortalWrt_x86_x64_Gateway**
+            **ImmortalWrt_x86_x64_mini**
             ### 📒 固件信息
             - 🚀 推荐：OpenWRT 作者固件 ➦ [xYx-c](https://github.com/xYx-c/build-openwrt/releases) ➦ [Zane-E](https://github.com/Zane-E/ROOTFS/releases) ➦ [217heidai](https://github.com/217heidai/OpenWrt-Builder/releases)
             - 💻 平台架构: x86_x64 , 🌐 默认地址: 10.5.2.1 , 🔑 默认密码: password
@@ -261,10 +269,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN3 }}
 
-      - name: Telegram notification
+      - name: Telegram notification complete
         run: |
          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=
 
-           🎉固件${{ env.PRODUCT_NAME }}成功编译完成！
+           🎉${{ env.PRODUCT_NAME }}编译成功！
 
           " >/dev/null 2>&1 && echo "ok..."
