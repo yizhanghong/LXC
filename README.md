@@ -1,4 +1,4 @@
-# 尝试统一LEDE/ImmortalWrt/OpenWRT Official X86三个版本的config文件
+# 尝试统一LEDE/ImmortalWrt/OpenWRT三个版本rootfs的config文件
 
 ## LEDE/ImmortalWrt/OpenWRT Official X86_X64 mini（主力更新）
 > [!TIP]
