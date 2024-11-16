@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 测x86_x64_lxc_mini
+name: 编译LEDE_x86_x64_lxc_mini
 
 permissions: write-all
 #开启写权限，防止无法上传到release
