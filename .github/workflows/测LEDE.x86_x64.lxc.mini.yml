@@ -161,6 +161,13 @@ jobs:
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
+    - name: Telegram notification start
+      run: |
+       curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=
+
+          🎉开始编译：${{ env.PRODUCT_NAME }}！
+
+        " >/dev/null 2>&1 && echo "ok..."
 
     - name: Compile the firmware
       id: compile
