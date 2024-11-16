@@ -163,7 +163,7 @@ jobs:
 
           🎉开始编译：${{ env.PRODUCT_NAME }}！
 
-        " >/dev/null 2>&1 && echo "ok...
+        " >/dev/null 2>&1 && echo "ok..."
 
     - name: Compile the firmware
       id: compile
