@@ -28,7 +28,7 @@ env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: main
   FEEDS_CONF: LEDE/feeds.conf.default.none
-  CONFIG_FILE: LEDE/.x86_x64.mini.fix.config
+  CONFIG_FILE: LEDE/x86_x64.mini.AIfixed.config
   DIY_P1_SH: LEDE/diy-part1.sh
   DIY_P2_SH: LEDE/diy-part2.sh
   UPLOAD_BIN_DIR: false
