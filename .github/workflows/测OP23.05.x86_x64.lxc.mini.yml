@@ -30,7 +30,7 @@ env:
   FEEDS_CONF: LEDE/feeds.conf.default
   CONFIG_FILE: LEDE/.x86_x64.mini.fix.config
   DIY_P1_SH: LEDE/diy-part1.sh
-  DIY_P2_SH: LEDE/diy-part-patches.sh
+  DIY_P2_SH: LEDE/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
