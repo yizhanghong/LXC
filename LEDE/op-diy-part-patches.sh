@@ -116,11 +116,9 @@ git clone https://github.com/Zane-E/luci-app-adguardhome.git feeds/kenzo/luci-ap
 # merge_package https://github.com/Lienol/openwrt-package openwrt-package/luci-app-filebrowser
 
 #mosdns
-rm -rf feeds/kenzo/luci-app-mosdns
-rm -rf feeds/packages/net/mosdns
-rm -rf feeds/luci/applications/luci-app-mosdns
-merge_package https://github.com/sbwml/luci-app-mosdns luci-app-mosdns
-merge_package https://github.com/sbwml/luci-app-mosdns luci-app-mosdns/mosdns
+rm -rf feeds/packages/net/v2ray-geodata
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # 修改主题背景
 # cp -f $GITHUB_WORKSPACE/bg1.jpg feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
