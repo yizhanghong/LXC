@@ -88,6 +88,10 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash.git package
 mv openclash/luci-app-openclash package/luci-app-openclash && rm -rf openclash
 pushd luci-app-openclash/tools/po2lmo
 
+git clone --depth=1 https://github.com/fw876/helloworld.git ssr-plus
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages.git passwall_packages
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall.git luci-passwall
+
 # ADG packages
 git clone --depth=1 -b master https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 
