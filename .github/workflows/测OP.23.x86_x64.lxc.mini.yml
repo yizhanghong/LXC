@@ -27,10 +27,10 @@ on:
 env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: openwrt-23.05
-  FEEDS_CONF: LEDE/feeds.conf.default.none
+  FEEDS_CONF: LEDE/op.feeds.conf.default
   CONFIG_FILE: LEDE/.x86_x64.mini.fix.config
   DIY_P1_SH: LEDE/diy-part1.sh
-  DIY_P2_SH: LEDE/diy-part2-op.sh
+  DIY_P2_SH: LEDE/diy-part-patches.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
