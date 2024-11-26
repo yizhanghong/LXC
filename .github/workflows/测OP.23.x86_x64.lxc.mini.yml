@@ -217,7 +217,6 @@ jobs:
         rm -rf openwrt-x86-64-generic-squashfs-combined.img.gz
         rm -rf openwrt-x86-64-generic-squashfs-rootfs.img.gz
         rm -rf openwrt-x86-64-generic.manifest
-        mv openwrt-x86-64-generic-rootfs.tar.gz openwrt-${{ env.VERSION }}-x86-64-mini-rootfs-${{ env.FILE_DATE2 }}.tar.gz
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         # echo "::set-output name=status::success"
         echo "status=success" >> $GITHUB_OUTPUT
