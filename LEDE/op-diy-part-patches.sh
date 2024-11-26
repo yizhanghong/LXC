@@ -93,7 +93,8 @@ git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages.git p
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall.git luci-passwall
 
 # ADG packages
-git clone --depth=1 -b master https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+#git clone --depth=1 -b master https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome.git luci-app-adguardhome
 
 #主题
 # rm -rf feeds/luci/applications/luci-app-argon-config
