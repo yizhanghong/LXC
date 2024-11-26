@@ -10,6 +10,8 @@
 
 > ~~待解决，直接使用管理界面无法打开，需更改uhttpd注释掉 443 相关的两行。 https://github.com/coolsnowwolf/lede/issues/11546 ！~~
 > > **2024.11.15貌似修复了此问题，采用替换uhttpd配置文件的方式，貌似顺便修复了网口的问题,测试一下。目前只编译了X86_X64版**
+> > https://github.com/xiaorouji/openwrt-passwall/discussions/1872
+> > https://github.com/coolsnowwolf/lede/issues/11671
 
 
 ## 感谢
@@ -29,17 +31,6 @@
 - [GitHub Actions](https://github.com/features/actions)
 - [OpenWrt](https://github.com/openwrt/openwrt)
 - [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
-- [tmate](https://github.com/tmate-io/tmate)
-- [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
-- [csexton/debugger-action](https://github.com/csexton/debugger-action)
-- [Cowtransfer](https://cowtransfer.com)
-- [WeTransfer](https://wetransfer.com/)
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
-- [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
-- [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
-- [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
-- [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
-- [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
 - [Zane-E/ROOTFS](https://github.com/Zane-E/ROOTFS)
 - [https://github.com/haiibo/OpenWrt](https://github.com/haiibo/OpenWrt)
 - [https://github.com/xYx-c/build-openwrt](https://github.com/xYx-c/build-openwrt)
