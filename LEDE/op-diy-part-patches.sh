@@ -82,11 +82,18 @@ rm -rf package/custom; mkdir package/custom
 #
 # Modify default IP
 sed -i 's/192.168.1.1/10.5.2.1/g' package/base-files/files/bin/config_generate
- 
+
+rm -rf feeds/luci/applications/luci-app-passwall
+rm -rf feeds/luci/applications/luci-app-passwall2
+rm -rf feeds/luci/applications/luci-app-openclash
+rm -rf feeds/luci/applications/luci-app-mosdns
+rm -rf feeds/luci/applications/luci-app-adguardhome
+
 # openclash packages
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash.git package/openclash
 mv openclash/luci-app-openclash package/luci-app-openclash && rm -rf openclash
 pushd luci-app-openclash/tools/po2lmo
+popd
 
 git clone --depth=1 https://github.com/fw876/helloworld.git ssr-plus
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages.git passwall_packages
