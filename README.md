@@ -2,7 +2,9 @@
 
 ## LEDE/ImmortalWrt/OpenWRT Official X86_X64 mini（主力更新）
 > [!TIP]
-> **插件：基础功能、IPV6、Wireguard、SSR Plus+、PW、OC、Argon 主题、AdGuard Home、Mosdns、upnp、ShutDown/关机、SmartDNS**
+> **插件：基础功能、IPV6、Wireguard、SSR Plus+、PW、OC、Argon 主题、AdGuard Home、Smartdns、upnp、ShutDown/关机**
+
+> > **删除插件：20241402 remove ~~AdGuard Home~~**
 
 >  **待加入：mosdns（貌似现在不支持LEDE了，https://github.com/sbwml/luci-app-mosdns/issues/252#issuecomment-2336829767 ）**
 
