@@ -13,10 +13,10 @@
 
 > SSRP+源：https://github.com/coolsnowwolf/lede/issues/11671
 
-> [!TIP]
+> [!TIP2]
 > **待完成：统一OpenWRT Official mini配置文件，但是很懒。PS：只能怪LXC真的太省心，部署完基本不需要维护**
 
-> [!TIP]
+> [!TIP3]
 > **待加入：mosdns（貌似现在不支持LEDE了，https://github.com/sbwml/luci-app-mosdns/issues/252#issuecomment-2336829767 ）**
 
 
