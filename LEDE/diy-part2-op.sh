@@ -52,7 +52,7 @@ sed -i 's/192.168.1.1/10.5.2.1/g' package/base-files/files/bin/config_generate
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash.git package/openclash
 mv openclash/luci-app-openclash package/luci-app-openclash && rm -rf openclash
 
-git clone --depth=1 -b master https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+#git clone --depth=1 -b master https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 
 git clone --depth=1 -b main https://github.com/kingyond/luci-app-accesscontrol-plus package/accesscontrol-plus
 mv accesscontrol-plus/luci-app-accesscontrol-plus  package/luci-app-accesscontrol-plus && rm -rf accesscontrol-plus
