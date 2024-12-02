@@ -1,6 +1,6 @@
 ## LEDE/ImmortalWrt/~~OpenWRT Official~~ X86_X64 mini（主力更新）
 > [!TIP]
-> **插件：基础功能、IPV6、Wireguard、SSR Plus+、PW、OC、Argon 主题、AdGuard Home、Smartdns、upnp、ShutDown/关机**
+> **插件：基础功能、IPV6、Wireguard、SSR Plus+、PW、OC、Argon 主题、Smartdns、upnp、ShutDown**
 
 > **删除插件：20241402 remove ~~AdGuard Home~~**
 
