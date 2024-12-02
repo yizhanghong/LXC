@@ -2,13 +2,13 @@
 > [!TIP]
 > **插件：基础功能、IPV6、Wireguard、SSR Plus+、PW、OC、Argon 主题、Smartdns、upnp、ShutDown**
 
-> [!TIP]
+> [!WARNING]
 > **待完成：统一OpenWRT Official mini配置文件，有几个插件冲突问题一直没找到方法**
 
-> [!TIP]
+> [!IMPORTANT]
 > **待加入：mosdns（貌似暂时不支持LEDE了，https://github.com/sbwml/luci-app-mosdns/issues/252#issuecomment-2336829767 ）**
 
-> [!TIP]
+> [!NOTE]
 > **维护记录**
 
 > **删除插件：20241402 remove ~~AdGuard Home~~**
