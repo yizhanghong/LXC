@@ -27,7 +27,7 @@
 
 ## 鸣谢
 
-- [openwrt源码](https://github.com/openwrt/openwrt) 、[LEDE源码](https://github.com/coolsnowwolf/lede) 、[ImmortalWrt源码](https://github.com/immortalwrt/immortalwrt) 、[@P3TERX](https://github.com/P3TERX),[P3TERX大佬的云编译](https://github.com/P3TERX/Actions-OpenWrt) 、[Microsoft Azure](https://azure.microsoft.com)、[GitHub Actions](https://github.com/features/actions)
+- [openwrt源码](https://github.com/openwrt/openwrt) 、[LEDE源码](https://github.com/coolsnowwolf/lede) 、[ImmortalWrt源码](https://github.com/immortalwrt/immortalwrt) 、[@P3TERX](https://github.com/P3TERX) 、[P3TERX大佬的云编译](https://github.com/P3TERX/Actions-OpenWrt) 、[Microsoft Azure](https://azure.microsoft.com)、[GitHub Actions](https://github.com/features/actions)
 
 ## License
 
