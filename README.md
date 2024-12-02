@@ -27,10 +27,7 @@
 
 ## 鸣谢
 
-- 感谢[openwrt源码](https://github.com/openwrt/openwrt) 、[LEDE源码](https://github.com/coolsnowwolf/lede) 、[ImmortalWrt源码](https://github.com/immortalwrt/immortalwrt)
-- 感谢[@P3TERX](https://github.com/P3TERX),[P3TERX大佬的云编译](https://github.com/P3TERX/Actions-OpenWrt)
-
-
+- [openwrt源码](https://github.com/openwrt/openwrt) 、[LEDE源码](https://github.com/coolsnowwolf/lede) 、[ImmortalWrt源码](https://github.com/immortalwrt/immortalwrt) 、[@P3TERX](https://github.com/P3TERX),[P3TERX大佬的云编译](https://github.com/P3TERX/Actions-OpenWrt)
 
 ## Credits
 
