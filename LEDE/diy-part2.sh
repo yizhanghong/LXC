@@ -54,8 +54,8 @@ rm -rf feeds/luci/applications/luci-app-serverchan
 git clone -b openwrt-18.06 https://github.com/tty228/luci-app-serverchan.git feeds/luci/applications/luci-app-serverchan
 
 #luci-app-adguardhome
-rm -rf feeds/kenzo/luci-app-adguardhome
-git clone https://github.com/Zane-E/luci-app-adguardhome.git feeds/kenzo/luci-app-adguardhome
+#rm -rf feeds/kenzo/luci-app-adguardhome
+#git clone https://github.com/Zane-E/luci-app-adguardhome.git feeds/kenzo/luci-app-adguardhome
 
 #filebrowser
 # rm -rf feeds/kenzo/luci-app-filebrowser
