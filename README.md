@@ -1,6 +1,4 @@
-# 尝试统一LEDE/ImmortalWrt/~~OpenWRT~~三个版本rootfs的config文件
-
-## LEDE/ImmortalWrt/OpenWRT Official X86_X64 mini（主力更新）
+## LEDE/ImmortalWrt/~~OpenWRT Official~~ X86_X64 mini（主力更新）
 > [!TIP]
 > **插件：基础功能、IPV6、Wireguard、SSR Plus+、PW、OC、Argon 主题、AdGuard Home、Smartdns、upnp、ShutDown/关机**
 
