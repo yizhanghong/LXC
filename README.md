@@ -6,17 +6,15 @@
 
 > **删除插件：20241402 remove ~~AdGuard Home~~**
 
-
-
 > ~~待解决，直接使用管理界面无法打开，需更改uhttpd注释掉 443 相关的两行。 https://github.com/coolsnowwolf/lede/issues/11546 ！~~
 > > **2024.11.15貌似修复了此问题，采用替换uhttpd配置文件的方式，貌似顺便修复了网口的问题,测试一下。目前只编译了X86_X64版**
 
 > passwall源：https://github.com/xiaorouji/openwrt-passwall/discussions/1872
 
 > SSRP+源：https://github.com/coolsnowwolf/lede/issues/11671
-> [!TIP]
+> [!TIP2]
 > **待完成：统一OpenWRT Official mini配置文件，但是很懒。PS：只能怪LXC真的太省心，部署完基本不需要维护**
-> [!TIP]
+> [!TIP3]
 > **待加入：mosdns（貌似现在不支持LEDE了，https://github.com/sbwml/luci-app-mosdns/issues/252#issuecomment-2336829767 ）**
 
 
