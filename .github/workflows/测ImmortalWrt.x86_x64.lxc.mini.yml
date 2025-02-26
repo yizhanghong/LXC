@@ -237,7 +237,7 @@ jobs:
           allowUpdates: true
           tag: ${{ env.FILE_NAME }}
           commit: main
-          token: ${{ secrets.TOKEN3  }}
+          token: ${{ secrets.GITHUB_TOKEN  }}
           body: |
             **ImmortalWrt_x86_x64_mini**
             ### 📒 固件信息
@@ -253,7 +253,7 @@ jobs:
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@main
         with:
-          token: ${{ secrets.TOKEN3 }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           retain_days: 3
           keep_minimum_runs: 3
@@ -267,7 +267,7 @@ jobs:
           delete_tag_pattern:
           delete_tags: true
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN3 }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Telegram notification complete
         run: |
