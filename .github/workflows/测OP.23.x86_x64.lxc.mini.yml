@@ -39,9 +39,9 @@ env:
   TZ: Asia/Shanghai
   FILE_NAME: OpenWRT_x86_x64_ROOTFS_mini
   PRODUCT_NAME: OP23.05_x86_x64_ROOTFS_mini
-  GITHUB_RELEASE: https://github.com/518512/My-ROOTFS
-  DISTRIB_REVISION: OpenWRT Main
-  KERNEL_PATCHVER: 无内核，纯LXC ROOTFS
+  #GITHUB_RELEASE: https://github.com/518512/My-ROOTFS
+  #DISTRIB_REVISION: OpenWRT Main
+  #KERNEL_PATCHVER: 无内核，纯LXC ROOTFS
 
 jobs:
   build:
