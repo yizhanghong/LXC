@@ -250,7 +250,7 @@ jobs:
         allowUpdates: true
         tag: ${{ env.FILE_NAME }}  # 确保 tag 名称有效，去除非法字符和空格
         commit: ${{ github.sha }}  # 使用有效的 commit SHA 值
-        token: ${{ secrets.TOKEN3  }}
+        token: ${{ secrets.GITHUB_TOKEN  }}
         body: |
           **This is firmware: OpenWRT official Mini for x86_x64**
           ### 📒 固件信息
